@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import BasicSpace from "../components/basics/BasicSpace";
-import BasicLayout from "../components/basics/BasicLayout";
-import BasicWrapper from "../components/basics/BasicWrapper";
-import Profile from "./Profile";
+import BSpace from "../components/basics/BSpace";
+import BLayout from "../components/basics/BLayout";
+import BWrapper from "../components/basics/BWrapper";
+import Profile from "./Profile/Profile";
 
 const Header = () => {
 
@@ -17,7 +17,7 @@ const Header = () => {
                     <Link href="/courses">Курсы</Link>
                     <Link href="/test">Тестирование</Link>
                 </Links>
-                <BasicSpace />
+                <BSpace />
                 <Profile />
             </Layout>
         </Wrapper>
@@ -27,10 +27,10 @@ const Header = () => {
 
 export default Header;
 
-const Layout = styled(BasicLayout)`
+const Layout = styled(BLayout)`
 justify-content: space-between;
 `;
-const Wrapper = styled(BasicWrapper)`
+const Wrapper = styled(BWrapper)`
 grid-area: header;
 padding-inline: 1%;
 background-color: var(--color-2);
@@ -44,7 +44,7 @@ border-radius: 12px;
 }
 
 `;
-const Links = styled(BasicLayout)`
+const Links = styled(BLayout)`
 gap: 1%;
 width: 80%;
 `;

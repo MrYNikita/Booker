@@ -1,0 +1,22 @@
+{
+	"changelogNew": {
+        "body": [
+            "## **${1:0}.${2:0}.${3:0} - $CURRENT_DATE.$CURRENT_MONTH.$CURRENT_YEAR**",
+            "### **Изменения**",
+            "- #### **_**",
+            "    ",
+            "### **Исправления**",
+            "- #### **_**",
+            "    ",
+            "***",
+        ],
+        "prefix": "#changelogNew"
+    },
+    "changelogPoint": {
+        "body": [
+            "- #### **$1**",
+            "    $0",
+        ],
+        "prefix": "#changelogPoint",
+    },
+}

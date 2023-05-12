@@ -23,6 +23,17 @@ export default class Course {
     */
     tasks = [];
     /**
+     * Материалы.
+     * ***
+     * @type {import('./Material.js').default[]}
+    */
+    materials = [];
+    /**
+     * Справочник
+    */
+    directory = null;
+
+    /**
      * Навыки, которые развивает курс.
      * ***
      * @type {string[]}
@@ -101,13 +112,3 @@ export default class Course {
     };
 
 };
-
-export const course0 = new Course({
-
-    id: 0,
-    name: 'Управленческий учёт',
-    tags: ['Бухгалтерия', 'Баланс', 'Финансы'],
-    preview: 'https://proforientator.ru/upload/img/publications/stati/buhgalter1.jpg',
-    description: 'Данный курс предназначен для понимания этапов бухгалтерской отчетности на практических примерах.'
-
-});

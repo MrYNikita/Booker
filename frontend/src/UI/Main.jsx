@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import BasicLayout from "../components/basics/BasicLayout";
-import BasicWrapper from "../components/basics/BasicWrapper";
+import BLayout from "../components/basics/BLayout";
+import BWrapper from "../components/basics/BWrapper";
 
 const Main = (props) => {
 
@@ -16,9 +16,9 @@ const Main = (props) => {
 
 export default Main;
 
-const Layout = styled(BasicLayout)`
+const Layout = styled(BLayout)`
 `;
-const Wrapper = styled(BasicWrapper)`
+const Wrapper = styled(BWrapper)`
 z-index: 0;
 position: relative;
 grid-area: main;

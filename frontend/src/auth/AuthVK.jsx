@@ -1,25 +1,27 @@
-import { useState } from 'react';
-import vkConnect from '@vkontakte/vk-bridge';
+// import { useState } from 'react';
+// import vkConnect from '@vkontakte/vk-bridge';
 import styled from 'styled-components';
-import BasicWrapper from '../components/basics/BasicWrapper';
+import BWrapper from '../components/basics/BWrapper';
 import {ReactComponent as SvgVK} from '../svg/brands/vk.svg';
 
 const AuthVK = () => {
 
-    const [userData, setUserData] = useState(null);
-    const [handleRegisterError, setHandleRegisterError] = useState(null);
+    // const [userData, setUserData] = useState(null);
+    // const [handleRegisterError, setHandleRegisterError] = useState(null);
 
-    const handleRegister = async () => {
-        try {
-            const data = await vkConnect.send('VKWebAppGetUserInfo');
-            setUserData(data);
-        } catch (e) {
-            setHandleRegisterError(e);
-        };
-    };
+    // const handleRegister = async () => {
+    //     try {
+    //         const data = await vkConnect.send('VKWebAppGetUserInfo');
+    //         setUserData(data);
+    //     } catch (e) {
+    //         setHandleRegisterError(e);
+    //     };
+    // };
+
+    // onClick={handleRegister}
 
     return (
-        <Wrapper onClick={handleRegister}>
+        <Wrapper>
             <Icon width={'30px'} height={'30px'} />
         </Wrapper>
     );
@@ -33,7 +35,7 @@ fill: #fff;
     background-color: var(--color-1);
 }
 `;
-const Wrapper = styled(BasicWrapper)`
+const Wrapper = styled(BWrapper)`
 width: 30px !important;
 height: 30px;
 padding: 2%;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import BasicLayout from "../components/basics/BasicLayout";
-import BasicWrapper from "../components/basics/BasicWrapper";
+import BLayout from "../components/basics/BLayout";
+import BWrapper from "../components/basics/BWrapper";
 import { ReactComponent as CalculateSVG } from '../svg/symbols/calculate.svg';
 import { ReactComponent as DirectorySVG } from '../svg/symbols/directory.svg';
 
@@ -37,18 +37,18 @@ height: 10%;
 padding: 10%;
 background-color: transparent;
 &:hover{
-    background-color: var(--color-1);
+    background-color: var(--color-5);
 }
 &>svg{
     width: 30px;
     height: 30px;
 }
 `;
-const Layout = styled(BasicLayout)`
+const Layout = styled(BLayout)`
 flex-direction: column;
 justify-content: start;
 `;
-const Wrapper = styled(BasicWrapper)`
+const Wrapper = styled(BWrapper)`
 grid-area: panel;
-background-color: var(--color-4);
+background-color: var(--color-1);
 `;

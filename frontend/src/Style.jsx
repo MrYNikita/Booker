@@ -11,6 +11,7 @@ export const StyleGlobal = createGlobalStyle`
     --color-6: #60c1fd;
     --color-7: #112f42;
     --color-8: #112f42;
+    --color-9: #a1d5ff;
 
     --color-text: #fff;
     --color-text-input: #003352;
@@ -32,6 +33,9 @@ export const StyleGlobal = createGlobalStyle`
 
     --box-shadow-1: 0 0 10px 1px var(--color-8);
     --box-shadow-2: 1px 1px 3px 1px #000;
+
+    --media-width-1: 600px;
+    --media-width-2: 1200px;
 }
 ::-webkit-scrollbar {
     width: 10px;

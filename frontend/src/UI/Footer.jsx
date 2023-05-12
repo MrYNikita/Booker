@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import BasicLayout from "../components/basics/BasicLayout";
-import BasicWrapper from "../components/basics/BasicWrapper";
+import BLayout from "../components/basics/BLayout";
+import BWrapper from "../components/basics/BWrapper";
 
 const Footer = () => {
 
@@ -16,9 +16,9 @@ const Footer = () => {
 
 export default Footer;
 
-const Layout = styled(BasicLayout)`
+const Layout = styled(BLayout)`
 `;
-const Wrapper = styled(BasicWrapper)`
+const Wrapper = styled(BWrapper)`
 grid-area: footer;
 background-color: var(--color-3);
 `;
