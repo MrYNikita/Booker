@@ -5,14 +5,14 @@ import Footer from "./UI/Footer";
 import Header from "./UI/Header";
 import Main from "./UI/Main";
 import Panel from "./UI/Panel";
-import { useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import PSignUp from "./pages/PSignUp";
 import PCourseSets from "./pages/PCourseSets/PCourseSets";
 import PTest from "./pages/PTest";
 import PCourse from "./pages/PCourse/PCourse";
 import PTask from "./pages/PCourse/PTask/PTask";
-import { Provider } from "react-redux";
+
+import { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
 
@@ -32,55 +32,53 @@ function App() {
     });
 
     return (
-        <Provider>
-            <Wrapper>
-                <Layout
-                    visPanel={visPanel}
-                // visFooter={visFooter}
-                >
-                    <Header />
-                    <Main
-                        // Прокрутка с футером
-                        // onWheel={e => {
-                        //     if (e.deltaY > 0) {
-                        //         if (!visFooter) {
-                        //             setVisFooter(true);
-                        //         }
-                        //     } else {
-                        //         if (visFooter) {
-                        //             setVisFooter(false);
-                        //         }
-                        //     }
+        <Wrapper>
+            <Layout
+                visPanel={visPanel}
+            // visFooter={visFooter}
+            >
+                <Header />
+                <Main
+                    // Прокрутка с футером
+                    // onWheel={e => {
+                    //     if (e.deltaY > 0) {
+                    //         if (!visFooter) {
+                    //             setVisFooter(true);
+                    //         }
+                    //     } else {
+                    //         if (visFooter) {
+                    //             setVisFooter(false);
+                    //         }
+                    //     }
 
-                        // }}
-                        onMouseMove={e => {
-                            if (!e.clientX) {
-                                setVisPanel(true);
-                            }
-                        }}
-                    >
-                        <Router>
-                            <Routes>
-                                <Route exact path='/' />
-                                <Route path='test' Component={PTest} />
-                                <Route path='sign' Component={PSignUp} />
-                                <Route path='courses' Component={PCourseSets} />
-                                <Route path='course/:id' Component={PCourse} />
-                                <Route path='course/:courseId/task/:taskId' Component={PTask} />
-                            </Routes>
-                        </Router>
-                    </Main>
-                    <Panel
-                        onMouseLeave={e => {
-                            if (visPanel) {
-                                setVisPanel(false);
-                            }
-                        }}
-                    />
-                    <Footer />
-                </Layout>
-            </Wrapper>
-        </Provider>
+                    // }}
+                    onMouseMove={e => {
+                        if (!e.clientX) {
+                            setVisPanel(true);
+                        }
+                    }}
+                >
+                    <Router>
+                        <Routes>
+                            <Route exact path='/' />
+                            <Route path='test' Component={PTest} />
+                            <Route path='sign' Component={PSignUp} />
+                            <Route path='courses' Component={PCourseSets} />
+                            <Route path='course/:id' Component={PCourse} />
+                            <Route path='course/:courseId/task/:taskId' Component={PTask} />
+                        </Routes>
+                    </Router>
+                </Main>
+                <Panel
+                    onMouseLeave={e => {
+                        if (visPanel) {
+                            setVisPanel(false);
+                        }
+                    }}
+                />
+                <Footer />
+            </Layout>
+        </Wrapper>
     );
 }
 
