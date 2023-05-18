@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import AuthVK from "../auth/AuthVK";
-import BLayout from "../components/basics/BLayout";
-import BWrapper from "../components/basics/BWrapper";
-import BasicTitle from "../components/basics/BTitle";
-import BInput from "../components/basics/BInput";
-import BLine from "../components/basics/BLine";
-import BHr from "../components/basics/BHr";
+import AuthVK from "../../auth/AuthVK";
+import BLayout from "../basics/BLayout";
+import BWrapper from "../basics/BWrapper";
+import BasicTitle from "../basics/BTitle";
+import BInput from "../basics/BInput";
+import BLine from "../basics/BLine";
+import BHr from "../basics/BHr";
 
-const PSignUp = () => {
+const PSign = () => {
 
     return (
         <Wrapper>
@@ -50,7 +50,7 @@ const PSignUp = () => {
 
 };
 
-export default PSignUp;
+export default PSign;
 
 const Hr = styled(BHr)`
 color: var(--color-3);

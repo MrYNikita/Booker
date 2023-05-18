@@ -1,9 +1,9 @@
 import { useRef } from "react";
 import { useSelector } from "react-redux";
 import styled from "styled-components";
-import Course from "../classes/Course";
-import BLayout from "../components/basics/BLayout";
-import BWrapper from "../components/basics/BWrapper";
+// import Course from "../../classes/Course";
+import BLayout from "../basics/BLayout";
+import BWrapper from "../basics/BWrapper";
 
 const PTest = () => {
 

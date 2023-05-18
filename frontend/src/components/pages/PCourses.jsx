@@ -1,15 +1,15 @@
 import { useState } from "react";
 import styled from "styled-components";
-import BLayout from "../../components/basics/BLayout";
-import BWrapper from "../../components/basics/BWrapper";
-import SearchPanel from "./SearchPanel/SearchPanel";
-import CourseSetCard from "./CourseSetsCard/CourseSetCard/CourseSetCard";
-import CourseSetsCard from "./CourseSetsCard/CourseSetsCard";
+import BLayout from "../basics/BLayout";
+import BWrapper from "../basics/BWrapper";
+import CoursesCard from "../UI/CoursesCard";
+import CoursesSetsCard from "../UI/CoursesSetsCard";
+import CoursesSearchPanel from "../UI/CoursesSearchPanel";
 
 // Курсы
 import courseManagmentAccounting from "../../courses/course";
 
-const PCourseSets = () => {
+const PCourses = () => {
 
     const cardsAll = [
         courseManagmentAccounting,
@@ -87,19 +87,19 @@ const PCourseSets = () => {
     return (
         <Wrapper>
             <Layout>
-                <SearchPanel
+                <CoursesSearchPanel
                     handleChangeSearch={handleChangeSearch}
                 />
-                <CourseSetsCard>
-                    {cards.map((card, key) => <CourseSetCard {...card} key={key} />)}
-                </CourseSetsCard>
+                <CoursesSetsCard>
+                    {cards.map((card, key) => <CoursesCard {...card} key={key} />)}
+                </CoursesSetsCard>
             </Layout>
         </Wrapper>
     );
 
 };
 
-export default PCourseSets;
+export default PCourses;
 
 const Layout = styled(BLayout)`
 display: grid;

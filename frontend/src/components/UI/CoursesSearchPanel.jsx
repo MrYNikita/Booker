@@ -1,11 +1,11 @@
 import { useState } from "react";
 import styled from "styled-components";
-import BInput from "../../../components/basics/BInput";
-import BLayout from "../../../components/basics/BLayout";
-import BP from "../../../components/basics/BP";
-import BWrapper from "../../../components/basics/BWrapper";
+import BInput from "../basics/BInput";
+import BLayout from "../basics/BLayout";
+import BP from "../basics/BP";
+import BWrapper from "../basics/BWrapper";
 
-const SearchPanel = (props) => {
+const CoursesSearchPanel = (props) => {
 
     const {
 
@@ -58,7 +58,7 @@ const SearchPanel = (props) => {
 
 };
 
-export default SearchPanel;
+export default CoursesSearchPanel;
 
 const Input = styled(BInput)`
 width: 100%;

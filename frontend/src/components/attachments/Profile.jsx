@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styled from "styled-components";
-import BLayout from "../../components/basics/BLayout";
-import BWrapper from "../../components/basics/BWrapper";
+import BLayout from "../basics/BLayout";
+import BWrapper from "../basics/BWrapper";
 import { ReactComponent as SVGTriangle } from '../../svg/symbols/triangle-1-fill.svg';
-import Menu from "./Menu/Menu";
+import Menu from "./Menu";
 
 const Profile = () => {
 
@@ -21,7 +21,6 @@ const Profile = () => {
                     <Trinagle toogle={toogle.toString()} />
                 </Toogle>
                 {toogle && <Menu />}
-
             </Layout>
         </Wrapper>
     );
@@ -62,10 +61,6 @@ const Layout = styled(BLayout)`
 gap: 5%;
 width: 5vw;
 border-radius: var(--border-radius);
-
-@media screen and (width <= 1200px) {
-    width: 15vw;
-}
 `;
 const Wrapper = styled(BWrapper)`
 width: 10vw;

@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import BLayout from "../../../../components/basics/BLayout";
-import BasicTitle from "../../../../components/basics/BTitle";
-import BWrapper from "../../../../components/basics/BWrapper";
+import BLayout from "../basics/BLayout";
+import BasicTitle from "../basics/BTitle";
+import BWrapper from "../basics/BWrapper";
 
-const CourseSetCard = (props) => {
+const CoursesCard = (props) => {
 
     const {
 
@@ -30,7 +30,7 @@ const CourseSetCard = (props) => {
 
 };
 
-export default CourseSetCard;
+export default CoursesCard;
 
 const Preview = styled.img`
 width: 100%;

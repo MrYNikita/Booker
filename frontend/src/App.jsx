@@ -1,23 +1,16 @@
 import styled from "styled-components";
 import BLayout from "./components/basics/BLayout";
 import BWrapper from "./components/basics/BWrapper";
-import Footer from "./UI/Footer";
-import Header from "./UI/Header";
-import Main from "./UI/Main";
-import Panel from "./UI/Panel";
-import PSignUp from "./pages/PSignUp";
-import PCourseSets from "./pages/PCourseSets/PCourseSets";
-import PTest from "./pages/PTest";
-import PCourse from "./pages/PCourse/PCourse";
-import PTask from "./pages/PCourse/PTask/PTask";
-
+import Header from "./components/attachments/Header";
+import Footer from "./components/attachments/Footer";
+import Main from "./components/attachments/Main";
+import Router from "./components/routes/Router";
+import Panel from "./components/attachments/Panel";
 import { useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
 
     const [visPanel, setVisPanel] = useState(false);
-    // const [visFooter, setVisFooter] = useState(false);
 
     window.addEventListener('beforeunload', e => {
 
@@ -35,39 +28,16 @@ function App() {
         <Wrapper>
             <Layout
                 visPanel={visPanel}
-            // visFooter={visFooter}
             >
                 <Header />
                 <Main
-                    // Прокрутка с футером
-                    // onWheel={e => {
-                    //     if (e.deltaY > 0) {
-                    //         if (!visFooter) {
-                    //             setVisFooter(true);
-                    //         }
-                    //     } else {
-                    //         if (visFooter) {
-                    //             setVisFooter(false);
-                    //         }
-                    //     }
-
-                    // }}
                     onMouseMove={e => {
                         if (!e.clientX) {
                             setVisPanel(true);
                         }
                     }}
                 >
-                    <Router>
-                        <Routes>
-                            <Route exact path='/' />
-                            <Route path='test' Component={PTest} />
-                            <Route path='sign' Component={PSignUp} />
-                            <Route path='courses' Component={PCourseSets} />
-                            <Route path='course/:id' Component={PCourse} />
-                            <Route path='course/:courseId/task/:taskId' Component={PTask} />
-                        </Routes>
-                    </Router>
+                    <Router />
                 </Main>
                 <Panel
                     onMouseLeave={e => {

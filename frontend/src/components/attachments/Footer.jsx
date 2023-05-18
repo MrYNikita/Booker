@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import BLayout from "../components/basics/BLayout";
-import BWrapper from "../components/basics/BWrapper";
+import BLayout from "../basics/BLayout";
+import BWrapper from "../basics/BWrapper";
 
 const Footer = () => {
 

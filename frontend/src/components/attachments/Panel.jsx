@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import BLayout from "../components/basics/BLayout";
-import BWrapper from "../components/basics/BWrapper";
-import { ReactComponent as CalculateSVG } from '../svg/symbols/calculate.svg';
-import { ReactComponent as DirectorySVG } from '../svg/symbols/directory.svg';
+import BLayout from "../basics/BLayout";
+import BWrapper from "../basics/BWrapper";
+import { ReactComponent as CalculateSVG } from '../../svg/symbols/calculate.svg';
+import { ReactComponent as DirectorySVG } from '../../svg/symbols/directory.svg';
 
 const Panel = (props) => {
 

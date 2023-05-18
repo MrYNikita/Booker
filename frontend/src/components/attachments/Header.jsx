@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import BSpace from "../components/basics/BSpace";
-import BLayout from "../components/basics/BLayout";
-import BWrapper from "../components/basics/BWrapper";
-import Profile from "./Profile/Profile";
+import BSpace from "../basics/BSpace";
+import BLayout from "../basics/BLayout";
+import BWrapper from "../basics/BWrapper";
+import Profile from "./Profile";
 
 const Header = () => {
 

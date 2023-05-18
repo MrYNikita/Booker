@@ -1,19 +1,19 @@
 import styled from "styled-components";
-import BLayout from "../../components/basics/BLayout";
-import BWrapper from "../../components/basics/BWrapper";
+import BLayout from "../basics/BLayout";
+import BWrapper from "../basics/BWrapper";
 import courseManagmentAccounting from "../../courses/course";
-import Preview from "./Preview/Preview";
-import TaskSets from "./TaskSets/TaskSets";
+import CoursePreview from "../UI/CoursePreview";
+import CourseMaterials from "../UI/CourseMaretials";
 
 const PCourse = () => {
 
     return (
         <Wrapper>
             <Layout>
-                <Preview {...courseManagmentAccounting} />
-                <TaskSets>
+                <CoursePreview {...courseManagmentAccounting} />
+                <CourseMaterials>
 
-                </TaskSets>
+                </CourseMaterials>
             </Layout>
         </Wrapper>
     );

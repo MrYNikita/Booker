@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import BLayout from "../../../components/basics/BLayout";
-import BWrapper from "../../../components/basics/BWrapper";
+import BLayout from "../basics/BLayout";
+import BWrapper from "../basics/BWrapper";
 
-const CourseSetsCard = (props) => {
+const CoursesSetsCard = (props) => {
 
     const {
 
@@ -20,7 +20,7 @@ const CourseSetsCard = (props) => {
 
 };
 
-export default CourseSetsCard;
+export default CoursesSetsCard;
 
 const Layout = styled(BLayout)`
 gap: 2% 1%;
